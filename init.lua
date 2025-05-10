@@ -1377,7 +1377,8 @@ require('lazy').setup({
       }
 
       vim.keymap.set('n', '<leader>e', '<Cmd>Neotree reveal<CR>')
-      vim.keymap.set('n', '<leader><leader>', ':b ', { desc = 'pick buffer' })
+      -- vim.keymap.set('n', '<leader><leader>', ':b ', { desc = 'pick buffer' })
+      vim.keymap.set('n', '<leader><leader>', '<Cmd>Telescope buffers<CR> ', { desc = 'pick buffer' })
     end,
   },
 
